@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 
-		body {
+		.content {
 			background-color: #f27a00;
 		}
 
@@ -30,194 +30,101 @@
 		.card-bg {
 			background-color: lightblue;
 		}
-		
 
+		p {
+			font-size: 22px;
+		}
+		
+		.content {
+			margin-left: 20%
+			margin-right: 20%;
+		}
+
+		img {
+			max-width: 100%
+		}
+		
+		.card-body > p {
+			font-size: 18px;
+		}
 
 	</style>
 	</head>
 	<body>
-        <nav class="navbar navbar-expand-sm navbar-light navbar-costum">
-            <a class="navbar-brand" href="#">PROST</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>    
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#aufgabenstellung">Aufgabenstellung</a>
-                    <a class="nav-item nav-link" href="#team">Teamvorstellung</a>
-                    <a class="nav-item nav-link" href="#fortschritt">Fortschritt</a>
-                </div>
-            </div>
-        </nav>
+	        <nav class="navbar navbar-expand-sm navbar-light navbar-costum">
+          		 <a class="navbar-brand" href="#">PROST</a>
+            		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            			<span class="navbar-toggler-icon"></span>
+            		 </button>    
+           		 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                		<div class="navbar-nav">
+                    			<a class="nav-item nav-link active" href="#aufgabenstellung">Aufgabenstellung</a>
+                    			<a class="nav-item nav-link" href="#team">Teamvorstellung</a>
+                    			<a class="nav-item nav-link" href="#fortschritt">Fortschritt</a>
+                		</div>
+           		</div>
+        	</nav>
+		
+		<div class="container-xxl content">
+
 		<h1>ProST</h1>
 		<h2 id="aufgabenstellung">Aufgabenstellung</h2>
 		<p>Das Virtual Product Structure Tool, kurz ProST, ist eine Webanwendung für den Zusammenbau von Produkten. Dabei lassen sich mehrere Bauteile in einer 3D-Umgebung visualisieren und durch Vorgänge wie Schweißen, Kleben, Schrauben, etc. verbinden. Aus dem zusammengebauten Produkt lässt sich dann eine Materialbeschaffungsliste, sowie eine Liste der notwendigen Operationen für den Zusammenbau generieren. Konzept:</p>
-
-		<img src="img/konzept.png" alt="Konzept"/>
+		
+		<div style="text-alignment: center;">
+			<img src="img/konzept.png" class="img-fluid" style="margin: 0 auto;" alt="Konzept"/>
+		</div>
 	
 		
 		<h2 id="team">Teamvorstellung</h2>
 			<div class="container">
-			<div class="row">
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/gartner.png" class="card" alt="Dawid Kopcinski" />
-  					<div class="card-body">
-						<h3 class="figtext">Dawid Kopcinski</h3>
-						<p>Graphdatabase Engineering<br />
-						dkopcinski@student.tgm.ac.at</p>
+				<div class="row">
+					<div class="col-sm">
+						<div class="card card-bg" style="width: 18rem;">
+  							<img src="img/gartner.png" class="card" alt="Dawid Kopcinski" />
+  							<div class="card-body">
+								<h3 class="figtext">Dawid Kopcinski</h3>
+								<p>Graphdatabase Engineering<br />
+								dkopcinski@student.tgm.ac.at</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="card card-bg" style="width: 18rem;">
+  							<img src="img/fraberger.png" class="card" alt="Jakob Fraberger" />
+  							<div class="card-body">
+								<h3 class="figtext">Jakob Fraberger</h3>
+								<p>UX-Engineering<br />
+								jfraberger@student.tgm.ac.at</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="card card-bg" style="width: 18rem;">
+  							<img src="img/kopcinski.png" class="card" alt="Dawid Kopcinski" />
+  							<div class="card-body">
+								<h3 class="figtext">Dawid Kopcinski</h3>
+								<p>Graphdatabase Engineering<br />
+								dkopcinski@student.tgm.ac.at</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="card card-bg" style="width: 18rem;">
+  							<img src="img/timmelmayer.png" class="card" alt="Bernhard Timmelmayer" />
+  							<div class="card-body">
+								<h3 class="figtext">Bernhard Timmelmayer</h3>
+								<p>Graphdatabase Engineering<br />
+								dkopcinski@student.tgm.ac.at</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/fraberger.png" class="card" alt="Jakob Fraberger" />
-  					<div class="card-body">
-						<h3 class="figtext">Jakob Fraberger</h3>
-						<p>UX-Engineering<br />
-						jfraberger@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/kopcinski.png" class="card" alt="Dawid Kopcinski" />
-  					<div class="card-body">
-						<h3 class="figtext">Dawid Kopcinski</h3>
-						<p>Graphdatabase Engineering<br />
-						dkopcinski@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/timmelmayer.png" class="card" alt="Bernhard Timmelmayer" />
-  					<div class="card-body">
-						<h3 class="figtext">Bernhard Timmelmayer</h3>
-						<p>Graphdatabase Engineering<br />
-						dkopcinski@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			</div>
-				<!--
-... (16 Zeilen verbleibend)
-Einklappen
-5 kB
-﻿
-﻿
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-
-		body {
-			background-color: #f27a00;
-		}
-
-		.figtext {
-			color: black;
-		}
-
-		.navbar-costum {
-			background-color: #fca247;
-		}
-
-		.container-fluid >.figure {
-			margin: 1%;
-		}
-
-		.container-fluid {
-			margin-left: 5%;
-			margin-right: 5%;
-		}
-		
-		.card-bg {
-			background-color: lightblue;
-		}
-		
-
-
-	</style>
-	</head>
-	<body>
-        <nav class="navbar navbar-expand-sm navbar-light navbar-costum">
-            <a class="navbar-brand" href="#">PROST</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>    
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#aufgabenstellung">Aufgabenstellung</a>
-                    <a class="nav-item nav-link" href="#team">Teamvorstellung</a>
-                    <a class="nav-item nav-link" href="#fortschritt">Fortschritt</a>
-                </div>
-            </div>
-        </nav>
-		<h1>ProST</h1>
-		<h2 id="aufgabenstellung">Aufgabenstellung</h2>
-		<p>Das Virtual Product Structure Tool, kurz ProST, ist eine Webanwendung für den Zusammenbau von Produkten. Dabei lassen sich mehrere Bauteile in einer 3D-Umgebung visualisieren und durch Vorgänge wie Schweißen, Kleben, Schrauben, etc. verbinden. Aus dem zusammengebauten Produkt lässt sich dann eine Materialbeschaffungsliste, sowie eine Liste der notwendigen Operationen für den Zusammenbau generieren. Konzept:</p>
-		
-		<h2 id="team">Teamvorstellung</h2>
-			<div class="container">
-			<div class="row">
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/gartner.png" class="card" alt="Dawid Kopcinski" />
-  					<div class="card-body">
-						<h3 class="figtext">Dawid Kopcinski</h3>
-						<p>Graphdatabase Engineering<br />
-						dkopcinski@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/fraberger.png" class="card" alt="Jakob Fraberger" />
-  					<div class="card-body">
-						<h3 class="figtext">Jakob Fraberger</h3>
-						<p>mutter ficken<br />
-						jfraberger@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/kopcinski.png" class="card" alt="Dawid Kopcinski" />
-  					<div class="card-body">
-						<h3 class="figtext">Dawid Kopcinski</h3>
-						<p>Graphdatabase Engineering<br />
-						dkopcinski@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm">
-				<div class="card card-bg" style="width: 18rem;">
-  					<img src="img/timmelmayer.png" class="card" alt="Dawid Kopcinski" />
-  					<div class="card-body">
-						<h3 class="figtext">Dawid Kopcinski</h3>
-						<p>Graphdatabase Engineering<br />
-						dkopcinski@student.tgm.ac.at</p>
-					</div>
-				</div>
-			</div>
-			</div>
-				<!--
-				<figure class="figure">
-  					<img src="img/gartner.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-
-  					<figcaption class="figure-caption">
-						<h3>Simon Gartner</h3>
-						<p>Projektleiter und 3D-Environment <br />
-						sgartner@student.tgm.ac.at</p>
-					</figcaption>
-				</figure>
-				-->
-			</div>
+			
 		<h2 id="fortschritt">Fortschritt</h2>
-		17.09.2021: Projektantrag eingereicht
+		<p>17.09.2021: Projektantrag eingereicht</p>
+		<p>17.10.2021: Einzelne Bauteile einfüg- und anzeigbar</p>
+	    </div>
 	</body>
 </html>
